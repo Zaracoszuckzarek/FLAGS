@@ -17,7 +17,7 @@ const displayFlags = countryFlagFilter? flags.filter(flag => flag.country === co
       <div key={flag.id} className="flagCard">
       <Link to={flag.id}>
       <img src={flag.img} alt="nice flags"/>
-      <div>
+      <div className="flag-card-info">
       <h3>{flag.name}</h3>
       </div>
       </Link>
@@ -38,18 +38,49 @@ const displayFlags = countryFlagFilter? flags.filter(flag => flag.country === co
 
   return (
     <div className="flags-Display-Wrapper-container">
-    <div className="display-filter-buttons-container">
-    <button onClick={()=> handleFlagchangeFilter("country", "USA")}>USA</button>
-    <button onClick={()=> handleFlagchangeFilter("country", "tunisia")}>Tunisia</button>
-    <button onClick={()=> handleFlagchangeFilter("country", "Ecuador")}>Ecuador</button>
-    <button onClick={()=> handleFlagchangeFilter("country", "pueto-rico")}>Pueto-Rico</button>
-    <button onClick={()=> handleFlagchangeFilter("country", "Argentina")}>Argentina</button>
-    <button onClick={()=> handleFlagchangeFilter("country", "rwanda")}>Rwanda</button>
-    <button onClick={()=> handleFlagchangeFilter("country", "Chad")}>Chad</button>
-    <button onClick={()=> handleFlagchangeFilter("country", "mauritania")}>Mauritania</button>
+    <div className="flags-head-h1">
+      <h3>Sort by country:</h3>
     </div>
-    <div className="flags-disply">
+    <div className="display-filter-buttons-container">
+    { 
+      countryFlagFilter?
+      (
+    <button onClick={()=> handleFlagchangeFilter("country", null)}>Clear filter</button>
+      ):null
+    }
+    
+    <button onClick={()=> handleFlagchangeFilter("country", "Australia")}>Australia</button>
+
+    <button onClick={()=> handleFlagchangeFilter("country", "Argentina")}>Argentina</button>
+    
+    <button onClick={()=> handleFlagchangeFilter("country", "Brazil")}>Brazil</button>
+    
+    <button onClick={()=> handleFlagchangeFilter("country", "Ecuador")}>Ecuador</button>
+    
+    <button onClick={()=> handleFlagchangeFilter("country", "Guatemala")}>Guatemala</button>
+
+    <button onClick={()=> handleFlagchangeFilter("country", "Kazakhstan")}>Kazakhstan</button>
+
+    <button onClick={()=> handleFlagchangeFilter("country", "Mauritania")}>Mauritania</button>
+
+    <button onClick={()=> handleFlagchangeFilter("country", "Puerto-Rico")}>Pueto-Rico</button>
+
+    <button onClick={()=> handleFlagchangeFilter("country", "Rwanda")}>Rwanda</button>
+    
+    <button onClick={()=> handleFlagchangeFilter("country", "South-Korea")}>South-Korea</button>
+
+    <button onClick={()=> handleFlagchangeFilter("country", "Switzerland")}>Switzerland</button>
+
+    <button onClick={()=> handleFlagchangeFilter("country", "Tunisia")}>Tunisia</button>
+
+</div>
+
+
+    <div className="flags-disply-list-container">
+    <h1>Flags factory</h1>
+    <div className="flags-List">
     {flagsList}
+    </div>
     </div>
     </div>
   )

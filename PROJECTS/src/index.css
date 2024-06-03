@@ -8,6 +8,7 @@
     justify-content: space-between;
     padding: 2rem 0.2rem;
     background: #1b1b1b;
+    width: 100%;
 }
 
 .mainHeader a{
@@ -20,6 +21,55 @@
     font-weight: bold;
     color: red;
     text-decoration: underline
+}
+
+
+.flagCard{
+    padding: 1rem 0.8rem;
+    width: 30%;
+    margin: 0.6rem;
+    background: whitesmoke;
+    border-radius: 0.2rem;
+}
+
+.display-filter-buttons-container button{
+    outline: none;
+    border: none;
+    padding: 0.4rem 0.4rem;
+    margin: 0.18rem;
+    width: 6rem;
+    cursor: pointer;
+    color: gray;
+}
+
+.flags-head-h1 h3{
+    text-align: start;
+    padding: 0.6rem;
+}
+
+
+
+.flagCard a{
+    text-decoration: none;
+    color: gray;
+}
+
+.flagCard img{
+    width: 100%;
+}
+
+.flags-disply-list-container h1{
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.6rem;
+}
+
+.flags-List{
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
