@@ -16,8 +16,8 @@ import ErrorElement from "./pages/ErrorElement";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Layout />}>
-      <Route path="home" index element={<Home />} />
+    <Route element={<Layout />}>
+      <Route index element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route
@@ -28,10 +28,11 @@ const router = createBrowserRouter(
       />
       <Route
         path="flags/:id"
-        element={<FlagsDetails loader={flagsDetailsPageLoader} />}
+        element = {<FlagsDetails />}
+        loader = {flagsDetailsPageLoader}
         errorElement={<ErrorElement />}
       />
-      <Route path="*" element={<PageNotFound />} />
+      <Route path = "*" element={<PageNotFound />} />
     </Route>
   )
 );

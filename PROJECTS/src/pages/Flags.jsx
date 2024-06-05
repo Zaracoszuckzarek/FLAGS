@@ -45,7 +45,7 @@ const displayFlags = countryFlagFilter? flags.filter(flag => flag.country === co
     { 
       countryFlagFilter?
       (
-    <button onClick={()=> handleFlagchangeFilter("country", null)}>Clear filter</button>
+    <button onClick={()=> handleFlagchangeFilter("country", null)}>&larr; Clear filter</button>
       ):null
     }
     
@@ -53,6 +53,7 @@ const displayFlags = countryFlagFilter? flags.filter(flag => flag.country === co
 
     <button onClick={()=> handleFlagchangeFilter("country", "Argentina")}>Argentina</button>
     
+    <button onClick={()=> handleFlagchangeFilter("country", "Belgium")}>Belgian</button>
     <button onClick={()=> handleFlagchangeFilter("country", "Brazil")}>Brazil</button>
     
     <button onClick={()=> handleFlagchangeFilter("country", "Ecuador")}>Ecuador</button>

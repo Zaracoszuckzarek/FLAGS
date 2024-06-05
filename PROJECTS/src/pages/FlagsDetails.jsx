@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { getFlagData } from "../api";
 
 
@@ -14,14 +14,19 @@ const flag = useLoaderData();
 
 
   return (
-
-    <div>
-      <img src={flag.img} alt="Details page" />
-      <div>
-        <h2>{flag.name}</h2>
-        <p>{flag.price}</p>
-        <p>{flag.description}</p>
-        <p>{flag.country}</p>
+    <div className="flags-details-wrapper-container">
+    <div className="flags-details-link">
+    <Link to="../flags" path="relative">&larr; Back to all flags</Link>
+    </div>
+      <div className="flags-details-card">
+        <img src={flag.img} alt="Details page" />
+          <div className="flags-details-info">
+          <h4>Name: {flag.name}</h4>
+          <p>Price: ${flag.price}.00</p>
+          <p>Des: {flag.description}</p>
+          <p>Country: {flag.country}</p>
+          <button>Add to cart</button>
+          </div>
       </div>
     </div>
   );

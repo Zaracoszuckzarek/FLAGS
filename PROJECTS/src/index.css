@@ -58,6 +58,8 @@
     width: 100%;
 }
 
+
+
 .flags-disply-list-container h1{
     text-align: center;
     text-transform: capitalize;
@@ -71,5 +73,47 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
+.flags-details-wrapper-container{
+    padding: 1rem 2rem;
+    width: 70%;
+    background: whitesmoke;
+}
+
+.flags-details-link a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+.flags-details-card img{
+    margin-top: 0.8rem;
+    width: 100%;
+}
+
+.flags-details-info button{
+    outline: none;
+    border: none;
+    margin: 0.8rem 0rem;
+    padding: 0.6rem;
+    background: orange;
+    color: black;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+.home-wrapper-container{
+    height: 100vh;
+    width: 100%;
+    padding: 0.8rem;
+}
+
+.home-wrapper-container h2{
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
 
 

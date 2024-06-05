@@ -7,7 +7,7 @@ const Header = () => {
       <nav>
         <NavLink
           className={({ isActive }) => (isActive?"active-links" : null)}
-          to="/home"
+          to="/"
         >
           Home
         </NavLink>
