@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData, useLocation } from "react-router-dom";
 import { getFlagData } from "../api";
 
 export async function loader({ params }) {
@@ -7,13 +7,16 @@ export async function loader({ params }) {
 
 const FlagsDetails = () => {
   const flag = useLoaderData();
-  console.log(flag);
+const location = useLocation()
+
+  const search = location.state?.search || ""
+  const type = location.state?.type || "all"
 
   return (
     <div className="flags-details-wrapper-container">
       <div className="flags-details-link">
-        <Link to=".." relative="path">
-          &larr;<span> Back to all flags </span>
+        <Link to={`..${search}`} relative="path">
+          &larr;<span> Back to {type} flags </span>
         </Link>
       </div>
       <div className="flags-details-card">
