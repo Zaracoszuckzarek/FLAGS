@@ -6,12 +6,12 @@ export async function loader() {
 }
 
 const Flags = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
   const flags = useLoaderData();
+  const [searchParams, setSearchParams] = useSearchParams();
   const countryFlagFilter = searchParams.get("country");
 
   const displayFlags = countryFlagFilter
-    ? flags.filter((flag) => flag.country === countryFlagFilter)
+    ? flags.filter(flag => flag.country === countryFlagFilter)
     : flags;
 
     
@@ -44,7 +44,7 @@ const Flags = () => {
   return (
     <div className="flags-Display-Wrapper-container">
       <div className="flags-head-h1">
-        <h3>Sort by country:</h3>
+        <h3>Search by country:</h3>
       </div>
       <div className="display-filter-buttons-container">
         {countryFlagFilter ? (
