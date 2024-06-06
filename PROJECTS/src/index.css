@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .mainHeader{
@@ -77,7 +78,8 @@
 
 .flags-details-wrapper-container{
     padding: 1rem 2rem;
-    width: 70%;
+    height: 100vh;
+    width: 100%;
     background: whitesmoke;
 }
 
@@ -110,10 +112,42 @@
     padding: 0.8rem;
 }
 
-.home-wrapper-container h2{
+.home-wrapper-container h4{
     text-align: center;
     padding: 2rem 0rem;
-}
+    text-decoration: underline;
+    }
+
+
+    .home-wrapper-container p{
+        word-spacing: 0.4rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-wrapper-container{
+        height: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 3rem 0rem;
+    }
+
+    .inner-hero-container{
+        margin: 0 auto;
+        height: 100%;
+        width: 45%;
+        border-radius: 0.6rem;
+        padding: 0.4rem 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem rgb(136, 131, 131) ;
+        background: whitesmoke;
+        margin-top: 1rem;
+    }
+
+    .footer{
+        background: #292929;
+        padding: 5rem 0rem;
+        color: gray;
+        text-align: center;
+    }
 
 
 

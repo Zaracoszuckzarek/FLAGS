@@ -10,14 +10,22 @@ const Home = () => {
       </p>
       <div className="hero-wrapper-container">
         <div className="inner-hero-container">
-          <h3>Our best is yet to come </h3>
           <p></p>
         </div>
+
         <div className="inner-hero-container">
-          <h3>ours are always great</h3>
+          <p></p>
+        </div>
+
+        <div className="inner-hero-container">
+          <p></p>
+        </div>
+
+        <div className="inner-hero-container">
           <p></p>
         </div>
       </div>
+      <div></div>
     </div>
   );
 };
