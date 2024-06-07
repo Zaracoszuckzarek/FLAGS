@@ -7,7 +7,7 @@ export async function loader({ params }) {
 
 const FlagsDetails = () => {
   const flag = useLoaderData();
-const location = useLocation()
+  const location = useLocation()
 
   const search = location.state?.search || ""
   const type = location.state?.type || "all"
