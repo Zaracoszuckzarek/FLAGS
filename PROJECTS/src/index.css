@@ -24,6 +24,11 @@
     text-decoration: underline
 }
 
+main{
+    height: auto;
+}
+
+
 
 .flagCard{
     padding: 1rem 0.8rem;
@@ -120,7 +125,6 @@
 
 
     .home-wrapper-container p{
-        word-spacing: 0.4rem;
         padding-bottom: 3rem;
     }
 
