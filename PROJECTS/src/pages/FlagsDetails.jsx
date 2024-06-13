@@ -1,7 +1,9 @@
 import { Link, useLoaderData, useLocation } from "react-router-dom";
 import { getFlagData } from "../api";
+import { authentication } from "../utils";
 
 export async function loader({ params }) {
+  await authentication()
   return getFlagData(params.id);
 }
 

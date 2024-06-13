@@ -1,7 +1,9 @@
 import { getFlagsData } from "../api";
+import { authentication } from "../utils";
 import { Link, useLoaderData, useSearchParams } from "react-router-dom";
 
 export async function loader() {
+  await authentication()
   return getFlagsData();
 }
 
