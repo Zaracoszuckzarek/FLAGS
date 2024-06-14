@@ -198,4 +198,74 @@ main{
     }
 
 
+    .loginForm{
+        height: 100vh;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .loginForm h1{
+        text-align: center;
+    }
+
+    .loginForm form{
+        height: 70vh;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background: whitesmoke;
+}
+
+.loginForm h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: gray;
+    padding: 1rem 0rem;
+}
+
+    .loginForm form input{
+        border: none;
+        outline: none;
+        padding: 0.8rem;
+        width: 90%;
+        margin: 1rem;
+        border: 0.001rem solid;
+        border-radius: 1.5rem;
+        position: relative;
+    }
+    .loginForm span{
+        display: flex;
+        justify-content: right;
+        padding: 0.5rem 0.3rem;
+    }
+
+    .loginForm span a{
+        padding: 0rem 0.2rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: gray;
+    }
+
+    .loginForm span a:hover{
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .loginForm form button{
+        padding: 0.8rem;
+        max-width: 90%;
+        margin-left: 1rem;
+        border: none;
+        outline: none;
+        border-radius: 1.5rem;
+        background: orangered;
+        color: whitesmoke;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+
+
 
